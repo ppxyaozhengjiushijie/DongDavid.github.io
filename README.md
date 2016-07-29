@@ -1,2 +1,2 @@
-# DavidDong.github.io
-DongDavid's Pages
+# David Dong.github
+David Dong's Pages
