@@ -50,6 +50,9 @@ a:hover {
 .home_content h2{
   font-size: 40px;
 }
+.home_content span{
+    margin:3px 10px;
+}
 .logo{
   position: fixed;
   top: 40px;
