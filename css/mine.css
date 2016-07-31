@@ -62,7 +62,10 @@ a:hover {
   z-index: 99;
 }
 .blog_container{
-  margin:15px 100px;
+  width: 80%;
+  padding: 10px;
+  margin-right: 10%;
+  margin-left: 10%;
   background-color:#FAEBD7;
 }
 .blog_container .blog_date{
