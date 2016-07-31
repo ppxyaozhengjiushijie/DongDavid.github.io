@@ -9,7 +9,7 @@ body {
   line-height: 1.5;
   color: #606c71; 
   min-height: 100%;
-  
+  min-width: 100%;
 }
 .foot{
   text-align: center;
