@@ -11,11 +11,13 @@ body {
   min-height: 100%;
   
 }
-footer{
-  margin-bottom: 0px;
-  position: fixed;
-  bottom: 0px;
+.foot{
+  text-align: center;
+  width: 100%;
+  position: absolute;
+  bottom: 15px;
   height: 10px;
+
 } 
 a {
   color: #1e6bb8;
