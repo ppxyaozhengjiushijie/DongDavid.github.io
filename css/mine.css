@@ -68,6 +68,7 @@ a:hover {
   margin-left: 10%;
   background-color:#FAEBD7;
 }
-.blog_container .blog_date{
-  float: right;
+.blog_container h2{
+  margin-right: auto;
+  margin-left: auto;
 }
