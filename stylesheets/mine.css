@@ -13,8 +13,9 @@ body {
 }
 footer{
   margin-bottom: 0px;
-  position: absolute;
+  position: fixed;
   bottom: 0px;
+  height: 10px;
 } 
 a {
   color: #1e6bb8;
@@ -38,6 +39,7 @@ a:hover {
   top: 0px;
   float: left;
   min-height: 100%;
+  padding-bottom: 10px;
 
 }
 .logo{
