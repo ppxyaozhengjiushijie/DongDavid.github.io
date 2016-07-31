@@ -61,3 +61,10 @@ a:hover {
   height: auto;
   z-index: 99;
 }
+.blog_container{
+  margin:15px 100px;
+  background-color:#FAEBD7;
+}
+.blog_container .blog_date{
+  float: right;
+}
