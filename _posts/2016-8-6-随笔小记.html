@@ -1,0 +1,17 @@
+---
+layout: blog
+title: 分享喜悦
+---
+
+<h2>{{ page.title }}</h2>
+<p>今天又花了些时间来弄主页。但是问题依旧还在，只是绕过去了，并没有解决。</p>
+<p>
+终究是href的地址问题。在首页index.html中还好，使用./就可以引用images和css文件夹里面的文件。
+但是在文章中使用./images或者/images都没办法引用到图片和css。大概是因为index.html是在根目录下，而文章却是在_post文件夹下面，但是我用了../也没用。
+</p>
+<p>启动jekyll serve之后会生成_site文件夹，里面有css和images文件夹，而_post文件夹被转化成了2016开头的多层级文件夹，里面存放了文章。这一篇试一试用很多个../能不能引用到css.
+href="../../../css/mine.css"
+</p>
+
+<link rel="stylesheet" type="text/css" href="../../../css/mine.css">
+<p>再不行我就也懒得弄了，直接使用URL https://dongdavid.github.io算了。</p>
