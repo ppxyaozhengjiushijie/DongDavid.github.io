@@ -3,11 +3,126 @@ layout: home
 
 ---
 
+<div class="book_navi">
+  <ul class="book_ul">
+    <li class="book_li">
+      <figure class="book smallbook">
+        <ul class="paperback_front white">
+          <li>
+            <span class="ribbon">随笔</span>
+            <img src="" alt="" width="100%" height="100%">
+          </li>
+          <li></li>
+        </ul>
+
+
+        <ul class="ruled_paper">
+          <li></li>
+          <li>
+            <a class="btn smallbtn" href="/life">  David 随笔小记</a>
+          </li>
+          <li></li>
+          <li></li>
+          <li></li>
+        </ul>
+
+        <ul class="paperback_back white">
+          <li>
+            <img src="" alt="" width="100%" height="100%">
+          </li>
+          <li></li>
+        </ul>
+       <figcaption>
+         <h1>Diary</h1>
+         <span>By Dong David</span>
+         <p>随笔小记 </p>
+       </figcaption>
+
+      </figure>
+
+    </li>
+    <li class="book_li">
+      <figure class="book smallbook">
 
 
 
+        <ul class="paperback_front">
+          <li>
+            <span class="ribbon">代码</span>
+            <img src="" alt="" width="100%" height="100%">
+          </li>
+          <li></li>
+        </ul>
 
-<div class="index-content coding">
+
+        <ul class="ruled_paper">
+          <li></li>
+          <li>
+            <a class="btn smallbtn" href="/coding">  David 点滴代码</a>
+          </li>
+          <li></li>
+          <li></li>
+          <li></li>
+        </ul>
+
+        <ul class="paperback_back">
+          <li>
+            <img src="" alt="" width="100%" height="100%">
+          </li>
+          <li></li>
+        </ul>
+         <figcaption>
+         <h1>ProgramLog</h1>
+         <span>By Dong David and others</span>
+         <p>记录了平时碰到的问题、敲代码的心得。</p>
+       </figcaption>
+      </figure>
+    </li>
+    <li class="book_li">
+      <figure class="book smallbook">
+
+
+        <ul class="paperback_front violet">
+          <li>
+            <span class="ribbon">分享</span>
+            <img src="" alt="" width="100%" height="100%">
+          </li>
+          <li></li>
+        </ul>
+
+       
+
+        <ul class="ruled_paper">
+          <li></li>
+          <li>
+            <a class="btn smallbtn" href="https://github.com/dongdavid">Github for David</a>
+          </li>
+          <li></li>
+          <li></li>
+          <li></li>
+        </ul>
+
+
+        <ul class="paperback_back violet">
+          <li></li>
+          <li></li>
+        </ul>
+         <figcaption>
+         <h1>Github</h1>
+         <span>By Dong David</span>
+         <p>一些粗浅的分享 </p>
+       </figcaption>
+      </figure>
+    </li>
+    
+  </ul>
+
+
+</div>
+
+
+
+<!-- <div class="index-content coding">
   <div class="section">
     <ul class="artical-cate">
       <li class="on"><a href="/coding"><span>程序人生</span></a></li>
@@ -16,22 +131,22 @@ layout: home
 
     <div class="cate-bar"><span id="cateBar"></span></div>
 
-<ul class="artical-list">
-  {% for post in site.categories.coding %}
-  <li>
-    <div class="table-article">
-      <div class="col-title">
-        <h2><a href="{{ post.url }}">{{ post.title }}</a></h2>
+  <ul class="artical-list">
+    {% for post in site.categories.coding %}
+    <li>
+      <div class="table-article">
+        <div class="col-title">
+          <h2><a href="{{ post.url }}">{{ post.title }}</a></h2>
+        </div>
+        <div class="col-date">
+          <p class="entry-date">{{ post.date|date:"%Y-%m-%d" }}</p>
+        </div>
       </div>
-      <div class="col-date">
-        <p class="entry-date">{{ post.date|date:"%Y-%m-%d" }}</p>
-      </div>
-    </div>
-    <div class="title-desc">{{ post.description }}</div>
-  </li>
-  {% endfor %}
-</ul>
+      <div class="title-desc">{{ post.description }}</div>
+    </li>
+    {% endfor %}
+  </ul>
   </div>
 
 
-</div>
+</div> -->

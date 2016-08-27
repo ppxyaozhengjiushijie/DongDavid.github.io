@@ -385,13 +385,13 @@ pre ol {
 }
 
 .index-content .aside {
-  position: fixed;
-  top: 0;
+  position: absolute;
+  top: 0px;
   left: 0;
+ 
   width: 20%;
   height: 100%;
   max-width: 500px;
- 
   background: #000;
   box-shadow: inset -1px 0 0 rgba(0, 0, 0, 0.3);
   background-size: cover;
@@ -399,12 +399,14 @@ pre ol {
 }
 
 .coding .aside {
+ 
  background-image: -webkit-linear-gradient(30deg, #155799, #159957);
  background-image: -o-linear-gradient(30deg, #155799, #159957);
  background-image: linear-gradient(120deg, #155799, #159957);
 }
 
 .life .aside {
+
   background-image: -webkit-linear-gradient(30deg, #155799, #159957);
   background-image: -o-linear-gradient(30deg, #155799, #159957);
   background-image: linear-gradient(120deg, #155799, #159957);
@@ -415,9 +417,8 @@ pre ol {
 }
 
 .index-content .section {
-  
-  margin-left: 30%;
-  padding-top: 160px;
+  margin-left: 20%;
+  padding-top: 130px;
   padding-right: 15%;
   ;
 }
@@ -429,6 +430,8 @@ pre ol {
 
 .index-content .artical-list li {
   margin-bottom: 70px;
+  word-break: keep-all;
+  white-space: nowrap;
 }
 
 .index-content h2 {
@@ -748,13 +751,14 @@ h3.about {
   }
   .index-content .aside {
     position: relative;
-    width: 100%;
-    height: 300px;
+    width: 30%;
+    height: 100%;
     max-width: none;
   }
   .index-content .section {
     margin-left: 0;
     padding-right: 0;
+    width: 80%;
   }
   .index-content .section ul {
     width: 85%;
@@ -842,3 +846,13 @@ h3.about {
 /**
  * Create By Dong David
  */
+.logo {
+   position: absolute;
+ top: 30px;
+  left: 40px;
+   float: left;
+   z-index: 99;
+}
+.logo img {
+  width: 70px;
+}
