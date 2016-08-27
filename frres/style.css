@@ -837,3 +837,11 @@ h3.about {
   bottom: 30px;
   right: 100px;
 }
+
+/**
+ * Create By Dong David
+ */
+.index-content {
+    position: absolute;
+    top: 200px;
+}
