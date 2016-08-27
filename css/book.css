@@ -518,6 +518,7 @@ figcaption p {
 	
 	}
 	.book_li{
+		float: none;
 		margin: 30px auto 10px;
 		
 	} 
@@ -525,7 +526,7 @@ figcaption p {
 	.book_ul li:nth-of-type(even){margin-left: 0px;}
 	.book_li li:nth-of-type(odd){margin-left: 0px;}
 	.book_li li:nth-of-type(even){margin-left: 0px;} */
-	.smallbook {
+	/* .smallbook {
 		position: relative;
 		width: 120px; 
 		height: 165px;
@@ -533,6 +534,6 @@ figcaption p {
 	.smallbtn{
 		margin-top: 75px; 
 		font-size: 0.8em;
-	}
+	} */
 
 }
