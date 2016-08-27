@@ -1,29 +1,29 @@
-　<!DOCTYPE html>
+<!DOCTYPE html>
+<html>
 
-　　<html>
+<head>
+<title>{% if page.title %}{{ page.title }} | {% endif %}桃之夭夭，灼灼其华</title>
+<meta http-equiv="content-type" content="text/html; charset=utf-8" />
+<meta name="author" content="David Dong" />
+<meta name="renderer" content="webkit">
+<meta name="description" content="David Dong's Pages" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0">
 
-　　<head>
+<link rel="shortcut icon" type="image/ico" href="{{BASE_PATH}}/images/logo.ico">
+<link rel="stylesheet" type="text/css" href="{{BASE_PATH}}/frres/style.css">
+<link rel="stylesheet" type="text/css" href="{{BASE_PATH}}/css/book.css">
+<script src="{{BASE_PATH}}/javascripts/jquery-3.1.0.min.js"></script>
+<!-- <script src="{{BASE_PATH}}/javascripts/jquery-1.7.1.min.js"></script> -->
 
-　　　　<meta http-equiv="content-type" content="text/html; charset=utf-8" />
-	    <link rel="shortcut icon" type="image/ico" href="https://dongdavid.github.io/images/favicon.ico">
-	    <meta name="viewport" content="width=device-width, initial-scale=1">
-	   	<meta name="author" content="David Dong" />
-  		<meta name="renderer" content="webkit">
-  		<meta name="description" content="David Dong's Pages" />
-	    <link rel="stylesheet" type="text/css" href="https://dongdavid.github.io/css/main.css" media="screen">
-　　　　<title>{{ page.title }}|桃之夭夭，灼灼其华</title>
-		
-　　</head>
+</head>
 
-　　<body>
-	
-		
-	
-　　　　{{ content }}
-
+<body>
 
 
  
-　　</body>
+    {{ content }}
 
-　　</html>
+
+</body>
+
+</html>

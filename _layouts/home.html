@@ -1,16 +1,171 @@
 ---
 layout: default
 ---
-	<a href="https://DongDavid.github.io"><img src="https://dongdavid.github.io/images/logo.ico" class="logo"  ></a>
+<div style="position:relative;  margin-right: 10px;float: right;">
+    <p style="margin: 0px;padding: 0px;margin-right: 20px;">---隐约雷鸣，阴霾天空，但盼风雨来，能留你在此.</p>
+    <p style="margin: 0px;padding: 0px;">---隐约雷鸣 ,阴霾天空 ,即使天无雨 ,我亦留此地.</p>
+</div>  
+  <!-- {{BASE_PATH}}/images//bg.jpg -->
+<div class="book_navi">
+  <ul class="book_ul">
+    <li class="book_li">
+      <figure class="book smallbook">
+
+        Front
+
+        <ul class="paperback_front white">
+          <li>
+            <span class="ribbon">随笔</span>
+            <img src="" alt="" width="100%" height="100%">
+          </li>
+          <li></li>
+        </ul>
+
+
+        <ul class="ruled_paper">
+          <li></li>
+          <li>
+            <a class="btn smallbtn" href="">  David 随笔小记</a>
+          </li>
+          <li></li>
+          <li></li>
+          <li></li>
+        </ul>
+
+        <ul class="paperback_back white">
+          <li>
+            <img src="" alt="" width="100%" height="100%">
+          </li>
+          <li></li>
+        </ul>
+        <!-- <figcaption>
+          <h1>Diary</h1>
+          <span>By zefeng.zhuang</span>
+          <p>My daily life. 我的日常生活。</p>
+        </figcaption> -->
+
+      </figure>
+
+    </li>
+    <li class="book_li">
+      <figure class="book smallbook">
+
+        Front
+
+        <ul class="paperback_front">
+          <li>
+            <span class="ribbon">代码</span>
+            <img src="" alt="" width="100%" height="100%">
+          </li>
+          <li></li>
+        </ul>
+
+
+        <ul class="ruled_paper">
+          <li></li>
+          <li>
+            <a class="btn smallbtn" href="">  David 点滴代码</a>
+          </li>
+          <li></li>
+          <li></li>
+          <li></li>
+        </ul>
+
+        <ul class="paperback_back">
+          <li>
+            <img src="" alt="" width="100%" height="100%">
+          </li>
+          <li></li>
+        </ul>
+        
+      </figure>
+    </li>
+    <li class="book_li">
+      <figure class="book smallbook">
+
+        Front
+        <ul class="paperback_front violet">
+          <li>
+            <span class="ribbon">收藏</span>
+            <img src="" alt="" width="100%" height="100%">
+          </li>
+          <li></li>
+        </ul>
+
+        Pages
+
+        <ul class="ruled_paper">
+          <li></li>
+          <li>
+            <a class="btn smallbtn" href="http://blogabs.cc/me/index2.html">>>收藏的资料</a>
+          </li>
+          <li></li>
+          <li></li>
+          <li></li>
+        </ul>
+
+        Back
+
+        <ul class="paperback_back violet">
+          <li></li>
+          <li></li>
+        </ul>
+        
+      </figure>
+    </li>
+    
+  </ul>
+</div>
 
 {{ content }}
+ 
 
 
+<script type="text/javascript">
+  $(function() {
+    function animateBar($item, noAni) {
+      var spanLeft = $item.find('span').offset().left;
+      var conLeft = $item.parent().offset().left;
+      var left = spanLeft - conLeft;
+      var width = $item.find('span').width() + 8;
 
+      if (noAni) {
+        $('#cateBar').css({
+          left: left,
+          width: width
+        })
+      } else {
+        $('#cateBar').stop().animate({
+          left: left,
+          width: width
+        }, 300)
+      }
+    }
 
+    var waitForFinalEvent = (function() {
+      var timers = {};
+      return function(callback, ms, uniqueId) {
+        if (!uniqueId) {
+          uniqueId = "Don't call this twice without a uniqueId";
+        }
+        if (timers[uniqueId]) {
+          clearTimeout(timers[uniqueId]);
+        }
+        timers[uniqueId] = setTimeout(callback, ms);
+      };
+    })();
 
-	<footer class="foot">
-       <span class="site-footer-credits">
-       You can contact me via email:ddv576029053@outlook.com. <a href="https://github.com/DongDavid">Click here to my github</a>. 
-       </span>
-     </footer>
+    $('.artical-cate li').mouseenter(function() {
+      animateBar($(this));
+    }).mouseleave(function() {
+      animateBar($('.artical-cate .on'));
+    });
+
+    $(window).resize(function(e) {
+      waitForFinalEvent(function() {
+        animateBar($('.artical-cate .on'));
+      })
+    })
+    animateBar($('.artical-cate .on'), true);
+  });
+</script>
