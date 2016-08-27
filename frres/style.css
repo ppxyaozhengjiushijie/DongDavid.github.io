@@ -848,7 +848,7 @@ h3.about {
  */
 .logo {
    position: absolute;
- top: 30px;
+  top: 30px;
   left: 40px;
    float: left;
    z-index: 99;
