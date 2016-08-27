@@ -471,7 +471,7 @@ figcaption p {
 		min-height: 440px;
 		height: auto;
 		padding: 0;
-		margin: 0 0 30px 0;
+		margin: 0 0 60px 0;
 	}
 
 	.book {
@@ -481,7 +481,7 @@ figcaption p {
 	figcaption {
 		text-align: center;
 		width: 320px;
-		top: 250px;
+		top: 220px;
 		padding-left: 0;
 		left: -80px;
 		font-size: 90%;
@@ -499,7 +499,7 @@ figcaption p {
 	height: 100%;
 	
 	padding: 0;
-	border: 1px red solid;
+	
 }
 .book_ul {
 	width: 100%;
@@ -515,13 +515,13 @@ figcaption p {
 	margin: 0;
 } 
 
-@media screen and (max-width: 750px) {
+/* @media screen and (max-width: 750px) {
 .book_li {
 	margin-left: 70px ;
 
 	
 }
-/* 	.smallbook {
+.smallbook {
 	position: relative;
 	width: 120px; 
 	height: 165px;
@@ -529,6 +529,6 @@ figcaption p {
 .smallbtn{
 	margin-top: 75px; 
 	font-size: 0.8em;
-} */
-
 }
+
+} */
