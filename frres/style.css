@@ -415,6 +415,7 @@ pre ol {
 }
 
 .index-content .section {
+  margin-top: 100px;
   margin-left: 30%;
   padding-top: 80px;
   padding-right: 15%;
@@ -841,7 +842,3 @@ h3.about {
 /**
  * Create By Dong David
  */
-.index-content {
-    
-  top: 20%;
-}
