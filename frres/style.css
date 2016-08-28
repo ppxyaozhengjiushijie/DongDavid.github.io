@@ -850,7 +850,7 @@ h3.about {
  * Create By Dong David
  */
 .home_banner {
-  position: fixed;
+  position: absolute;
   top: 30px;
   float: left;
   width: 100%;

@@ -34,13 +34,14 @@ $(document).ready(function(){
         var href = $(this).attr('href');
         if(href){
             if(href.indexOf('#') == 0){
-            }else if ( href.indexOf('/') == 0 || href.toLowerCase().indexOf('dongdavid.com')>-1 ){
+            }else if ( href.indexOf('/') == 0 || href.toLowerCase().indexOf('dongdavid')>-1 ){
             }else if ($(element).has('img').length){
             }else{
                 $(this).attr('target','_blank');
                 $(this).addClass('external');
             }
         }
+        
     });
 
     (function(){
@@ -100,7 +101,6 @@ $(document).ready(function(){
             var indexCon = '<div id="menuIndex" class="sidenav"></div>';
 
             $(indexCon).insertAfter('.sidenav');
-
             $('#menuIndex')
                 .append($(tmpl))
                 .delegate('a','click',function(e){
