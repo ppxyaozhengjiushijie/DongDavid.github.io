@@ -73,7 +73,7 @@ a {
 	text-align: center;
 		
 	margin-bottom: 0px;
-	padding-top: 40px;
+	padding-top: 30px;
 }
 
 .align > li {
@@ -459,12 +459,15 @@ figcaption p {
 
 /* Media Queries */
 @media screen and (max-width: 37.8125em) {
+	.align {
+		margin-top: 180px;
+	}
 	.align > li {
 		width: 100%;
-		min-height: 440px;
+		min-height: 400px;
 		height: auto;
 		padding: 0;
-		margin: 140px 0 30px 0;
+		margin: 0px 0 0px 0;
 	}
 
 	.book {
