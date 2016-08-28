@@ -846,13 +846,37 @@ h3.about {
 /**
  * Create By Dong David
  */
-.logo {
-   position: absolute;
+.home_banner {
+  position: relative;
   top: 30px;
-  left: 40px;
+  float: left;
+  width: 100%;
+}
+.logo {
+   margin-left: 40px;
    float: left;
-   z-index: 99;
 }
 .logo img {
   width: 70px;
+  float: left;
+}
+.logo .logo_desc{
+  float: left;
+  color: #CDAA7D;position:relative;left:10px ;top:30px;width: 160px;
+}
+.signature {
+ float: right;
+
+
+
+ min-width: 380px;
+}
+.signature p{
+  margin: 0;
+  padding: 0px;
+  margin-left: 30px;
+}
+.signature p:first-child{
+  margin-left:0px;
+  
 }

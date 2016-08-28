@@ -80,15 +80,18 @@ a {
 	width: 100%;
 	max-width: 1170px;
 	text-align: center;
+	
 }
 
-.align > li {
-	width: 500px;
-	min-height: 300px;
+.align> li {
+	width: 300px;
+	
+	min-height: 400px;
 	display: inline-block;
-	margin: 30px 20px 30px 60px;
-	padding: 0 0 0 60px;
+	margin: 30px 20px 20px 30px;
+	padding: 20px 0 0 80px;
 	vertical-align: top;
+	float: left;
 }
 
 /* ///////////////////////////////////////////////////
@@ -466,6 +469,9 @@ figcaption p {
 
 /* Media Queries */
 @media screen and (max-width: 37.8125em) {
+	.align {
+		padding-top: 100px;
+	}
 	.align > li {
 		width: 100%;
 		min-height: 440px;
@@ -481,7 +487,7 @@ figcaption p {
 	figcaption {
 		text-align: center;
 		width: 320px;
-		top: 220px;
+		top: 250px;
 		padding-left: 0;
 		left: -80px;
 		font-size: 90%;
