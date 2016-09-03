@@ -385,7 +385,7 @@ pre ol {
 }
 
 .index-content .aside {
-  position: absolute;
+  position: fixed;
   top: 0px;
   left: 0;
  
@@ -884,4 +884,15 @@ h3.about {
 .signature p:first-child{
   margin-left:0px;
   
+}
+.foot {
+  text-align: center;
+  clear: both;
+  width: 100%;
+  bottom: 0px;
+  margin-top: 10px;
+  position: fixed;
+}
+.foot span {
+  color:#00868B;
 }
