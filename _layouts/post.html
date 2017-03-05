@@ -17,7 +17,9 @@ layout: default
   body {
     background: #e8e8e8;
   }
-  
+  .entry {
+    min-height: 800px;
+  }
   @media screen and (max-width: 750px) {
     body {
       background: #fff;
@@ -32,7 +34,7 @@ layout: default
 </style>
 
 <div id="content">
-  <div class="entry" style="min-height: 100%;">
+  <div class="entry">
     <h1 class="entry-title"><a href="{{ page.url }}" title="{{ page.title }}">{{ page.title }}</a></h1>
     <p class="entry-date">{{ page.date|date:"%Y-%m-%d" }}</p>
     {{ content }}
@@ -73,3 +75,4 @@ layout: default
   </script>
 <script src="/frres/post.js"></script>
 <!-- <a id="scrollTop" href="javascript:scroll(0,0)" class="icon_top"> <img src="/images/icon_top.png"></a> -->
+<br><br>
